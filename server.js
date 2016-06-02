@@ -6,7 +6,7 @@ const path = require('path');
 const bunyan = require('bunyan');
 const webpack = require('webpack');
 
-const LOG = bunyan.createLogger({ name: 'footnotes' });
+const LOG = bunyan.createLogger({ name: 'app' });
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
