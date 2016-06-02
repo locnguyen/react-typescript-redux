@@ -12,9 +12,9 @@ module.exports = {
     devtool: 'source-map',
 
     output: {
-        publicPath: 'http://localhost:3000/',
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'build'),
+        publicPath: 'http://localhost:3000/'
     },
 
     resolve: {
@@ -50,13 +50,12 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.BannerPlugin('Copyright Production Point LLC'),
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'index.html')
         }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('development')
+            'process.env': { 'NODE_ENV': JSON.stringify('development') }
         })
     ]
-}
+};
