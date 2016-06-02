@@ -1,0 +1,20 @@
+{
+  "name": "footnotes-web",
+  "globalDependencies": {
+    "history": "github:DefinitelyTyped/DefinitelyTyped/react-router/history.d.ts#4ec043b45149ecc525f0f5cb447ebd3eec30d552",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160505161446",
+    "node": "registry:dt/node#6.0.0+20160524002506",
+    "react": "github:DefinitelyTyped/DefinitelyTyped/react/react.d.ts#816f03f3e4a97c0f4b5dd12bb1302a1d3b8b9f7c",
+    "react-addons-test-utils": "registry:dt/react-addons-test-utils#0.14.0+20160427035638",
+    "react-dom": "github:DefinitelyTyped/DefinitelyTyped/react/react-dom.d.ts#e0abafb1a6ff652f7ff967120e312d5c1916eaef",
+    "react-redux": "github:DefinitelyTyped/DefinitelyTyped/react-redux/react-redux.d.ts#816f03f3e4a97c0f4b5dd12bb1302a1d3b8b9f7c",
+    "react-router": "github:DefinitelyTyped/DefinitelyTyped/react-router/react-router.d.ts#4ec043b45149ecc525f0f5cb447ebd3eec30d552",
+    "react-router-redux": "registry:dt/react-router-redux#4.0.0+20160316155526",
+    "redux": "github:DefinitelyTyped/DefinitelyTyped/redux/redux.d.ts#816f03f3e4a97c0f4b5dd12bb1302a1d3b8b9f7c",
+    "redux-devtools": "github:DefinitelyTyped/DefinitelyTyped/redux-devtools/redux-devtools.d.ts#816f03f3e4a97c0f4b5dd12bb1302a1d3b8b9f7c",
+    "redux-devtools-dock-monitor": "github:DefinitelyTyped/DefinitelyTyped/redux-devtools-dock-monitor/redux-devtools-dock-monitor.d.ts#816f03f3e4a97c0f4b5dd12bb1302a1d3b8b9f7c",
+    "redux-devtools-log-monitor": "github:DefinitelyTyped/DefinitelyTyped/redux-devtools-log-monitor/redux-devtools-log-monitor.d.ts#816f03f3e4a97c0f4b5dd12bb1302a1d3b8b9f7c",
+    "redux-thunk": "github:DefinitelyTyped/DefinitelyTyped/redux-thunk/redux-thunk.d.ts#816f03f3e4a97c0f4b5dd12bb1302a1d3b8b9f7c"
+  },
+  "dependencies": {}
+}
