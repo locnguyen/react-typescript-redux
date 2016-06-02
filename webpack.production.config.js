@@ -1,5 +1,3 @@
-/// <reference path="typings/globals/node/index.d.ts"/>
-
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
