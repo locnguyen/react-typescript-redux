@@ -6,18 +6,20 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: {
         vendor: ['react', 'react-dom', 'redux'],
-        app: path.join(__dirname, 'src',  'index.tsx')
+        app: path.join(__dirname, 'src', 'index.tsx')
     },
 
     output: {
-        path: path.join(__dirname, 'build'),
-        filename: '[name]-[hash].js'
+        filename: '[name]-[hash].js',
+        path: path.resolve(__dirname, 'build'),
+        publicPath: '/assets/'
     },
 
     resolve: {
         extensions: ['', '.ts', '.tsx', '.js', '.scss'],
         modulesDirectories: [
-            'node_modules'
+            'node_modules',
+            path.resolve(__dirname, 'node_modules')
         ]
     },
 
@@ -43,7 +45,6 @@ module.exports = {
     postcss: [require('autoprefixer')],
 
     plugins: [
-        new webpack.BannerPlugin('Copyright Production Point LLC'),
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'index.html')
         }),
@@ -53,9 +54,9 @@ module.exports = {
         }),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin(),
-        new ExtractTextPlugin('[name]-[hash].css', {allChunks: true}),
+        new ExtractTextPlugin('[name]-[hash].css', { allChunks: true }),
         new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('production')
+            'process.env': { 'NODE_ENV': JSON.stringify('production') }
         })
     ]
 };

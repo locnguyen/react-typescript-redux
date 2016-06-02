@@ -8,7 +8,7 @@
   },
   "scripts": {
     "postinstall": "node_modules/.bin/webpack --config webpack.production.config.js --progress --colors",
-    "start": "NODE_ENV=development node server.js | bunyan",
+    "start": "node server.js | bunyan",
     "test": "NODE_ENV=test karma start karma.conf.js"
   },
   "engines": {

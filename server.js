@@ -44,6 +44,16 @@ if (process.env.NODE_ENV === 'development') {
         method: 'GET',
         path: '/{param*}',
         handler: {
+            file: {
+                path: path.join(__dirname, 'build', 'index.html')
+            }
+        }
+    });
+
+    server.route({
+        method: 'GET',
+        path: '/assets/{param*}',
+        handler: {
             directory: {
                 path: path.join(__dirname, 'build')
             }
